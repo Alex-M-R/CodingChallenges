@@ -6,20 +6,12 @@ public class FindIntersection
 {
     public static int getIntersection(LinkedList<Integer> A, LinkedList<Integer> B)
     {
-        int aSize = A.size();
-        int bSize = B.size();
-
-        for (int i = 0; i < aSize; i++)
+        for (Integer a : A)
         {
-            for (int j = 0; j < bSize; j++)
+            for(Integer b : B)
             {
-
-                int currentNode = A.get(i);
-                if (currentNode == B.get(j))
-                {
-
-                    return currentNode;
-                }
+                if (a == b)
+                    return a;
             }
         }
         throw new RuntimeException("No intersection found");

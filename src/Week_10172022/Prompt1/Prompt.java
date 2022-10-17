@@ -1,6 +1,7 @@
 package Week_10172022.Prompt1;
 
 
+import java.time.LocalDate;
 import java.util.LinkedList;
 
 /*
@@ -18,6 +19,7 @@ public class Prompt
         // 2 given linked lists
         LinkedList<Integer> firstList = new LinkedList();
         LinkedList<Integer> secondList = new LinkedList();
+
 
         firstList.add(3);
         firstList.add(7);
