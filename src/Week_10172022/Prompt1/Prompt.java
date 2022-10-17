@@ -11,7 +11,7 @@ In this example, assume nodes with the same value are the exact same node object
 
 Do this in 0( m + n) time (where m and n are the lengths of the lists) and constant space.
  */
-public class Prompt1
+public class Prompt
 {
     public static void main(String[] args)
     {

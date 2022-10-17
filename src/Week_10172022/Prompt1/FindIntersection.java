@@ -4,15 +4,21 @@ import java.util.LinkedList;
 
 public class FindIntersection
 {
-    public static int getIntersection(LinkedList<Integer> firstList, LinkedList<Integer> secondList)
+    public static int getIntersection(LinkedList<Integer> A, LinkedList<Integer> B)
     {
-        for (int i = 0; i < firstList.size(); i++)
+        int aSize = A.size();
+        int bSize = B.size();
+
+        for (int i = 0; i < aSize; i++)
         {
-            for (int j = 0; j < secondList.size(); j++)
+            for (int j = 0; j < bSize; j++)
             {
-                if (firstList.get(i) == secondList.get(j))
+
+                int currentNode = A.get(i);
+                if (currentNode == B.get(j))
                 {
-                    return firstList.get(i);
+
+                    return currentNode;
                 }
             }
         }

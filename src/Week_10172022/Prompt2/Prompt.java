@@ -7,7 +7,7 @@ package Week_10172022.Prompt2;
 
 Each method should run in constant time.
  */
-public class main
+public class Prompt
 {
     public static void main(String[] args)
     {
