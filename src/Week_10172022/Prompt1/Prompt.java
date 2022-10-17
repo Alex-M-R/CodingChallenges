@@ -1,9 +1,4 @@
 package Week_10172022.Prompt1;
-
-
-import java.time.LocalDate;
-import java.util.LinkedList;
-
 /*
 1) Given two singly linked lists that intersect at some point, find the intersecting node. Assume the lists are non-cyclical.
 
@@ -16,22 +11,26 @@ public class Prompt
 {
     public static void main(String[] args)
     {
-        // 2 given linked lists
-        LinkedList<Integer> firstList = new LinkedList();
-        LinkedList<Integer> secondList = new LinkedList();
+        // 2 singly linked lists using Node
+        // list A: 3, 7, 8, 10
+        Node A = new Node(3);
+        A.next = new Node(7);
 
+        // list B: 99, 1, 8, 10
+        Node B = new Node(99);
+        B.next = new Node(1);
 
-        firstList.add(3);
-        firstList.add(7);
-        firstList.add(8);
-        firstList.add(10);
+        // shared nodes
+        Node newNode = new Node(8);
+        A.next.next = newNode;
+        B.next.next = newNode;
 
-        secondList.add(99);
-        secondList.add(1);
-        secondList.add(8);
-        secondList.add(10);
+        newNode = new Node(10);
+        A.next.next.next = newNode;
+        B.next.next.next = newNode;
 
-        System.out.println("Intersection: " + FindIntersection.getIntersection(firstList, secondList));
+        Node intersection = Node.getIntersection(A, B);
+        System.out.println("Intersection: " + intersection.data);
     }
 
 }
