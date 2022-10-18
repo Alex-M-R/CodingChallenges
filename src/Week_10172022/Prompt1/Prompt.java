@@ -20,6 +20,8 @@ public class Prompt
         Node B = new Node(99);
         B.next = new Node(1);
 
+
+
         // shared nodes
         Node newNode = new Node(8);
         A.next.next = newNode;
@@ -29,8 +31,9 @@ public class Prompt
         A.next.next.next = newNode;
         B.next.next.next = newNode;
 
+
         Node intersection = Node.getIntersection(A, B);
-        System.out.println("Intersection: " + intersection.data);
+        System.out.println("Intersection: " + (intersection == null? "null" : intersection.data));
     }
 
 }
