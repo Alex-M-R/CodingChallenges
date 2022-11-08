@@ -1,4 +1,4 @@
-package Week_10312022.Prompt1;
+package Week_10312022.JavaPrompt1;
 
 import java.util.HashMap;
 import java.util.Map;

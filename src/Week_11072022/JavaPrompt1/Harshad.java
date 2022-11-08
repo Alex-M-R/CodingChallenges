@@ -1,4 +1,4 @@
-package Week_11072022.Prompt1;
+package Week_11072022.JavaPrompt1;
 
 public class Harshad
 {

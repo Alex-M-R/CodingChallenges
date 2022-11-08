@@ -1,4 +1,4 @@
-package Week_11072022.Prompt1;
+package Week_11072022.JavaPrompt1;
 /*
 Java:
 A number is said to be Harshad if it's exactly divisible by the sum of its digits. Create a function that determines whether a number is a Harshad or not.

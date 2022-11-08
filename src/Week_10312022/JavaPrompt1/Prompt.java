@@ -1,4 +1,4 @@
-package Week_10312022.Prompt1;
+package Week_10312022.JavaPrompt1;
 
 /*
 The Atbash cipher is an encryption method in which each letter of a word is replaced with its "mirror" letter in the alphabet: A <=> Z; B <=> Y; C <=> X; etc.
